@@ -647,10 +647,8 @@ footer
     
 }
 @media screen and (min-width:993px) {
-    .header-area
-    {
-        overflow: hidden;
-    }
+    
+    
     .container,
     .main-container
     {
@@ -674,6 +672,16 @@ footer
     {
         width: 100%;
     }
+    .shop
+    {
+        width: 90%;
+        height: auto;
+    }
+    .shop img
+    {
+        width: 100%;
+    }
+   
     
 }
 
