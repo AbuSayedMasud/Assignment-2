@@ -596,12 +596,16 @@ footer
     {
         width: 100%;
     }
+    .header-area
+    {
+        padding: 10px;
+    }
     header-details h2
    {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 50px;
-    width: 278px;
+    width:230px;
     height: 138px;
    }
    .header-banner
@@ -611,14 +615,14 @@ footer
     }
     .header-banner img
     {
-        width: 329px;
+        width: 270px;
         height: 259.17px;
     }
     /** header end **/
     /** main  start **/
     .main-container
     {
-        max-width:100%;
+        max-width:80%;
         display: flex;
         flex-direction: row;
         
