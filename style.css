@@ -405,7 +405,7 @@ footer
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right:17.5px;
+        
     }
     
     /*** shop-start ***/
@@ -420,6 +420,11 @@ footer
          grid-template-columns: repeat(1,1fr);
          grid-row-gap: 40px;
      }
+     .contact-area h2
+    {
+        text-align: center;
+        size: 24px;
+    }
      .contact-area textarea
      {
          width: 80%;
@@ -515,14 +520,20 @@ footer
      /** shop-end **/
 
      /** contact-area start **/
-
+     
      .contact-area
      {
          grid-template-columns: repeat(1,1fr);
          grid-row-gap: 40px;
+         width: 90%;
+         margin: 40px auto 20px;
          
-       
-     }
+         
+    }
+    .contact-area h2
+    {
+        text-align: center;
+    }
      .contact-area textarea
      {
          width: 80%;
