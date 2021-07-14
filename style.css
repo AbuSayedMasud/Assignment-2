@@ -27,6 +27,7 @@ body
   
    justify-content: center;
    padding-left: 20px;
+   overflow: hidden;
     
 }
 /****************        ****************\
@@ -410,7 +411,7 @@ footer
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        margin-left: 17.5px;
     }
     
     /*** shop-start ***/
@@ -518,7 +519,7 @@ footer
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right:17.5px;
+       
     }
     
     /** shop-start **/
@@ -643,6 +644,36 @@ footer
         grid-row-gap: 40px;
     }
     /** main-end **/
+    
+}
+@media screen and (min-width:993px) {
+    .header-area
+    {
+        overflow: hidden;
+    }
+    .container,
+    .main-container
+    {
+        width: 100%; 
+        
+    }
+    
+    .players,
+    .shops,
+    .contact-area
+    {
+        width: 98%;
+        margin-left:10px;
+    }
+    .player
+    {
+        width: 90%;
+        height: auto;
+    }
+    .player img
+    {
+        width: 100%;
+    }
     
 }
 
