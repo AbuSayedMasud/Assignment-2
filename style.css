@@ -1,6 +1,10 @@
-/* fonts */
+/****************       ****************\
+                  fonts
+/****************        ****************/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');   
-/* common styles */
+/****************        ****************\
+               common styles
+/****************        ****************/
 body
 {
     margin: 0;
@@ -12,7 +16,10 @@ body
    
    width: 1160px;
 }
-/* herder-area */
+
+/****************        ****************\
+             header-area start
+/****************        ****************/
 .header-area
 {
     background-color: #2D25A0;
@@ -21,7 +28,9 @@ body
    justify-content: center;
     
 }
-/* header-bottom */
+/****************        ****************\
+             header-bottom start
+/****************        ****************/
 .header-bottom
 {
     display: flex;
@@ -55,7 +64,15 @@ margin-top: 37px;
     padding: 10px  24px;
     background-color:  #E02C6D;
     text-transform: capitalize;
+    border:2px solid transparent;
+   
     
+}
+.header-details:hover a
+{
+border: 2px solid #E02C6D;
+transition: border 1s ease-in-out .02s;
+background: none;
 }
 .fa-arrow-right
 {
@@ -67,7 +84,23 @@ margin-top: 37px;
     width: 556.01px;
     height: 438px;
 }
-/* main start */
+.header-banner:hover img
+{
+    
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out .01s;
+}
+/****************        ****************\
+             header-bottom end
+/****************        ****************/
+
+/****************        ****************\
+             header-area end
+/****************        ****************/
+
+/****************        ****************\
+               main-area start
+/****************        ****************/
 main
 {
     display: flex;
@@ -81,6 +114,9 @@ main
 {
     width: 1050px;
 }
+/****************        ****************\
+               players-area start
+/****************        ****************/
 .players
 {
     display: grid;
@@ -103,7 +139,11 @@ main
  width: 300px;
 height: 256px;
 }
-
+.player-img:hover img
+{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out .01s;
+}
 .player-title
 {
     font-size: 28px;
@@ -116,7 +156,13 @@ height: 256px;
     color: #6C6C6C;
     margin-top: 0;
 }
-/* shop */
+/****************        ****************\
+               players-area end
+/****************        ****************/
+
+/****************        ****************\
+               shop-area start
+/****************        ****************/
 .shop-area
 {
     margin-top: 50px;
@@ -153,7 +199,19 @@ hr {
     border-radius:5px;
 
 }
-.shop a{
+
+.jersry-img img
+{
+width: 300px;
+height: 256px;
+}
+.jersry-img:hover img
+{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out .01s;
+}
+.shop a
+{
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -166,17 +224,24 @@ hr {
     align-items: center;
     justify-content: center;
     width: 100px;
-    
-    
-    
-
+   
 }
-.jersry-img img
+.shop:hover a
 {
-width: 300px;
-height: 256px;
+   
+    border:2px solid #E02C6D;
+    transition: border 1s ease-in-out .02s;
+    background:none;
+    color: #E02C6D;
+    
 }
-/* contact-area */
+/****************        ****************\
+               shop-area end
+/****************        ****************/
+
+/****************        ****************\
+               contact-area start
+/****************        ****************/
 
 .contact-area
 {
@@ -217,9 +282,26 @@ height: 256px;
     padding: 10px  24px;
     background-color:  #E02C6D;
     text-transform: capitalize;
-
+    
 }
-/* footer */
+.comment-area:hover button
+{
+    background: none;
+    color:#E02C6D ;
+    border: 2px solid #E02C6D;
+    transition: border 1s ease-in-out .02s;
+}
+/****************        ****************\
+               contact-area end
+/****************        ****************/
+
+/****************        ****************\
+               main-area start
+/****************        ****************/
+
+/****************        ****************\
+               footer-area start
+/****************        ****************/
 footer
 {
     display: flex;
@@ -247,25 +329,42 @@ footer
     font-size: 17px;
     border-radius:50%;
     margin-left: 14px;
+    border: 2px solid transparent;
+}
+.social-media-link:hover i{
+    border: 2px solid  #E02C6D;
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out .01s ;
 }
 .copy-right p
 {font-size: 18px;
     margin-top: 0;
 
 }
-/* media query */
-/* for mobile device */
-@media screen and (max-width:360px){
+/****************        ****************\
+               footer-area end
+/****************        ****************/
 
+/****************        ****************\
+            Media-query-area start
+/****************        ****************/
+
+/****************        ****************\
+      For mobile device area start
+/****************        ****************/
+
+@media only screen and (max-width:360px){
+   /*** body-area start ***/
   body{
        max-width:360px;
-  }  
-    /* header-area */
+     }   
+    /*** body-area end ***/
+
+    /*** header-area start ***/
     .container
     {
         width: 100%;
     }
-
     .header-bottom
     {
     flex-direction: column;
@@ -277,24 +376,23 @@ footer
    .header-details h2
    {
     font-weight: bold;
-  font-size: 36px;
-   line-height: 50px;
-   width: 278px;
-height: 138px;
+    font-size: 36px;
+    line-height: 50px;
+    width: 278px;
+    height: 138px;
    }
-    .header-banner
+   .header-banner
     {
-        width: 329px;
-height: 259.17px;
+     width: 329px;
+     height: 259.17px;
     }
     .header-banner img
     {
         width: 329px;
-height: 259.17px;
+        height: 259.17px;
     }
-    /* header-area end */
-    /* main-area start */
-    
+    /*** header-area end ***/
+    /*** main-area start ***/
     .main-container
     {
         max-width:100%;
@@ -307,31 +405,223 @@ height: 259.17px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
-
+        margin-right:17.5px;
     }
-    /* players end */
-    /* shop-start */
-    .shop-area h2{
+    
+    /*** shop-start ***/
+    .shop-area h2
+    {
         text-align: center;
     }
-     /* shop-start */
-     /* contact-area */
+     /*** shop-end ***/
+     /*** contact-area start***/
      .contact-area
      {
          grid-template-columns: repeat(1,1fr);
          grid-row-gap: 40px;
      }
-     /* footer-area */
+     .contact-area textarea
+     {
+         width: 80%;
+     }
+     #check
+     {
+         width: 80%;
+     }
+     /*** contact-area  end***/
 
-     .footer-logo img{
+      /** main-area end **/
+
+     /*** footer-area start ***/
+     .footer-logo
+     {
+         margin-right: 17.5px;
+     }
+     .footer-logo img
+     {
         width: 320px;
-         height: 60px;
-
+        height: 60px;
      }
      .copy-right
      {
          width: 236px;
      }
+     /*** footer-area end ***/
+}
+@media only screen and ( min-width:361px) and 
+(max-width:688px){
+    /** body start **/
+   body
+   {
+       min-width: 361px;
+       max-width: 688px;
+   }
+    /** body end **/
+
+    /** header-area start **/
+    .container
+    {
+        width: 100%;
+    }
+    .header-bottom
+    {
+     flex-direction: column;
+    }
+    .header-details
+    {
+        margin-bottom: 50px;
+    }
+    .header-details h2
+   {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    width: 278px;
+    height: 138px;
+   }
+   .header-banner
+    {
+     width: 329px;
+     height: 259.17px;
+    }
+    .header-banner img
+    {
+        width: 329px;
+        height: 259.17px;
+    }
+    /** header-area end **/
+
+    /** main-area start **/
+    .main-container
+    {
+        max-width:100%;
+    }
+    .players,
+    .shops
+    {
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 24px  ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right:17.5px;
+    }
+    
+    /** shop-start **/
+    .shop-area h2
+    {
+        text-align: center;
+    }
+     /** shop-end **/
+
+     /** contact-area start **/
+
+     .contact-area
+     {
+         grid-template-columns: repeat(1,1fr);
+         grid-row-gap: 40px;
+         
+       
+     }
+     .contact-area textarea
+     {
+         width: 80%;
+     }
+     #check
+     {
+         width: 80%;
+     }
+     /** contact-area end **/
+
+      /** main-area end **/
+
+     /* footer-area  start*/
+     .footer-logo
+     {
+         margin-right: 17.5px;
+     }
+     .footer-logo img
+     {
+        width: 320px;
+        height: 60px;
+     }
+     .copy-right
+     {
+         width: 236px;
+     }
+    /* footer-area  end*/
+    
+}
+/****************        ****************\
+      For mobile device area end
+/****************        ****************/
+
+/****************        ****************\
+      For tablets device area start
+/****************        ****************/
+
+@media only screen and ( min-width:689px) and 
+(max-width:992px)
+{
+    body
+    {
+        min-width:689px;
+        max-width:992px;
+    }
+    /** header start **/
+    .container
+    {
+        width: 90%;
+    }
+    header-details h2
+   {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    width: 278px;
+    height: 138px;
+   }
+   .header-banner
+    {
+     width: 329px;
+     height: 259.17px;
+    }
+    .header-banner img
+    {
+        width: 329px;
+        height: 259.17px;
+    }
+    /** header end **/
+    /** main  start **/
+    .main-container
+    {
+        max-width:100%;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: center;
+    }
+    .players,
+    .shops
+    {
+        grid-template-columns:repeat(2,1fr);
+    }
+    .shops{
+        grid-row-gap: 30px;
+    }
+    .contact-area
+    {
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 40px;
+    }
+    /** main-end **/
+    
 }
 
+/****************        ****************\
+      For tablets device area end
+/****************        ****************/
+
+/****************        ****************\
+            Media-query-area end
+/****************        ****************/
