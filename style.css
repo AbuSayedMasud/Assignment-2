@@ -105,7 +105,7 @@ main
 {
     display: flex;
     justify-content: center;
-    margin: 70px  0 43px 0;
+    margin: 70px  0 63px 0;
     flex-direction: column;
     align-items: center;
     
@@ -307,7 +307,8 @@ footer
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 187px;
+    margin-bottom:63px;
+    
 }
 .footer-logo img
 {
@@ -438,6 +439,10 @@ footer
       /** main-area end **/
 
      /*** footer-area start ***/
+     footer
+     {
+         margin-bottom: 187px;
+     }
      .footer-logo
      {
          margin-right: 17.5px;
@@ -547,6 +552,10 @@ footer
       /** main-area end **/
 
      /* footer-area  start*/
+     footer
+     {
+         margin-bottom: 187px;
+     }
      .footer-logo
      {
          margin-right: 17.5px;
